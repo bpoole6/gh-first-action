@@ -8,3 +8,8 @@ jobs:
         run: echo "Hello World"
       - name: Print gooby
         run: echo "Done - bye!"
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output GitHub context
+        run: echo "${{ toJSON(github) }}"
